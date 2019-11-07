@@ -8,32 +8,16 @@
 \usepackage{fge}
 \usepackage{holtpolt}
 \usepackage{mathabx}
-\begin{comment}
-:Title: SWAN wave model
-
-SWAN_ (developed by SWAN group, TU Delft, The Netherlands) is a wave spectral numerical model. For Simlating WAves Nearshore, it is necessary to define spatial grids of
-physical dominant factors (wind friction, dissipation) as well as define a COMPUTATIONAL
-grid on which the model performs its (spectral) calculations: budgeting energy spectra over
-each cell of the (computational) grid. Grids might have different spatial resolution and extension.
-
-.. _SWAN: http://vlm089.citg.tudelft.nl/swan/index.htm
-
-\end{comment}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
+\begin{comment}
+...nearshore wave model courtesy of the SWAN group 
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usetikzlibrary{positioning}
 \begin{document}
 \pagestyle{empty}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tikzpicture}[scale=0.75,every node/.style={minimum size=1cm},on grid]
-
-
 \begin{scope}[
     	yshift=5,every node/.append style={
     	yslant=0.5,xslant=-1},yslant=0.2,xslant=-.6
@@ -44,8 +28,6 @@ each cell of the (computational) grid. Grids might have different spatial resolu
     	%\draw[green,very thick] (1,1) grid (5,6);
     	%\draw[orange] (0,0) rectangle (5,5);
     \end{scope}
-    
-   
  
  \draw [brown,ultra thick](3,-5) parabola bend (-4,4) (5,1)  ;
 \draw [yellow,ultra thick](3,-5) parabola bend (-4,2) (5,1)  ;
@@ -63,10 +45,9 @@ each cell of the (computational) grid. Grids might have different spatial resolu
 \draw [orange,ultra thick](3,-5) parabola bend (-4,2) (4,-1)   ;
 \draw [orange,ultra thick](3,-5) parabola bend (-4,2) (4,-2)   ;
 \draw [orange,ultra thick](3,-5) parabola bend (-4,2) (4,-3)   ;
-   
-    \end{tikzpicture}
+       \end{tikzpicture}
     
-     \begin{tikzpicture}[tqft/cobordism/.style={draw}]
+\begin{tikzpicture}[tqft/cobordism/.style={draw}]
 \ pi c [ t q f t / pa i r o f pants , name=a ] ;
 \ pi c [ t q f t / c y l i n d e r to next , anchor=incoming boundary
 1 ,name=c , at=(a−outgoing boundary 1) ] ;
@@ -75,8 +56,7 @@ boundary 1 , at=(a−outgoing boundary 2) ] ;
 \end{tikzpicture}
 
  \begin{tikzpicture}[scale=1.2,every node/.style={minimum size=1cm},on grid]
- 
-%\draw [ultra thick](-3,-5) parabola bend (4,4) (5,-1)  ;
+ %\draw [ultra thick](-3,-5) parabola bend (4,4) (5,-1)  ;
 \draw [brown,ultra thick](3,-5) parabola bend (-4,4) (5,1)  ;
 \draw [yellow,ultra thick](3,-5) parabola bend (-4,2) (5,1)  ;
 \draw [green,ultra thick](3,-5) parabola bend (-4,8) (5,1) ;
@@ -102,6 +82,7 @@ boundary 1 , at=(a−outgoing boundary 2) ] ;
     \end{tikzpicture}
 \end{document}
 
+ %%%%RE[f]USE 
  \draw [ultra thick](3,-5) parabola bend (-4,4) (5,1)  ;
 \draw [brown,ultra thick](3,-5) parabola bend (4,4) (5,1)  ;
 \draw [blue,ultra thick](3,-5) parabola bend (-3,6) (5,1)  ;
@@ -114,5 +95,3 @@ boundary 1 , at=(a−outgoing boundary 2) ] ;
         \draw [dashed] (0,3.5)  parabola bend (2.75,4.5) (5,3.5);
         %\draw [] (0,4)  parabola bend (2.75,4.8) (5,4);
         \draw [yellow,very thick] (0,3)  parabola bend (2.75,3.8) (5,3);
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
